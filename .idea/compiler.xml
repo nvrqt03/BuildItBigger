@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.7">
       <module name="FinalProject.app" target="1.8" />
       <module name="FinalProject.javajokes" target="1.8" />
+      <module name="FinalProject.jokelibrary" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

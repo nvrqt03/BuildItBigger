@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FinalProject.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FinalProject.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/FinalProject.backend.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/FinalProject.backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/javajokes/FinalProject.javajokes.iml" filepath="$PROJECT_DIR$/.idea/modules/javajokes/FinalProject.javajokes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mylibrary/FinalProject.jokelibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/mylibrary/FinalProject.jokelibrary.iml" />
     </modules>
   </component>
 </project>
