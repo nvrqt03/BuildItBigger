@@ -1,1 +1,2 @@
+include ':javajokes'
 include ':app', ':backend'
