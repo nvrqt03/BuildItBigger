@@ -226,6 +226,5 @@
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-gass-license:11.8.0@aar" level="project" />
     <orderEntry type="module" module-name="FinalProject.jokelibrary" />
     <orderEntry type="module" module-name="FinalProject.javajokes" />
-    <orderEntry type="module" module-name="FinalProject.backend" />
   </component>
 </module>
