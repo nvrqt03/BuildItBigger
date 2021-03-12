@@ -16,13 +16,13 @@ import java.io.IOException;
 
 import ajmitchell.android.mylibrary.JokeLibraryMainActivity;
 
-public class EndpointAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
+public class EndpointAsyncTask extends AsyncTask<Context, Void, String> {
 
     private static MyApi myApiService = null;
     private Context context;
 
     @Override
-    protected String doInBackground(Pair<Context, String>... pairs) {
+    protected String doInBackground(Context... args) {
         if (myApiService == null) {
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
@@ -35,20 +35,22 @@ public class EndpointAsyncTask extends AsyncTask<Pair<Context, String>, Void, St
                     });
             myApiService = builder.build();
         }
-        context = pairs[0].first;
-        String name = pairs[0].second;
+        context = args[0];
 
         try {
             return myApiService.tellJoke().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            return null;
         }
     }
 
+//    @Override
+//    protected String doInBackground(Pair<Context, String>... pairs) {
+//        return null;
+//    }
+
     @Override
     protected void onPostExecute(String s) {
-
-
         //Jokes jokes = new Jokes();
         Intent intent = new Intent(context, JokeLibraryMainActivity.class);
         intent.putExtra("joke", s);

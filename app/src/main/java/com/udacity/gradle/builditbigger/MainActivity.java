@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 //        intent.putExtra("joke", jokes.tellJoke());
 //        startActivity(intent);
 //        Toast.makeText(this, jokes.tellJoke(), Toast.LENGTH_SHORT).show();
-        new EndpointAsyncTask().execute(new Pair<Context, String>(this, "joke"));
+        new EndpointAsyncTask().execute(this);
     }
 
 
